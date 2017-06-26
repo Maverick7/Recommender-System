@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Recommender or Ranking System</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="recommendations.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron" >
+			<table id="userData" class="table table-borderless" >
+
+			</table>
+		</div>
+
+		<div class="form-inline">
+		<div class="radio">
+
+		Algorith To Use: 
+		<label class="radio-inline"><input type="radio" name="algorithm" value="sim_distance"> Eucledean Distance</label>
+		<label class="radio-inline"><input type="radio" name="algorithm" value="sim_pearson"> Pearson Coefficient</label>
+		</div>
+		
+		<div class="form-group">
+			&nbsp;&nbsp;
+		<label for="usr">User Name :</label>
+		<input type="text" class="form-control" id="userName" value="Toby">
+		</div>
+		<div class="form-group">
+			&nbsp;&nbsp;
+		<label for="usr">No of Matches needed :</label>
+		<input type="number" min=0  class="form-control" id="noOfRecords" value="Toby">
+		</div>
+		<div class="form-group">
+		<button id="checkTop" class="btn btn-info">Find Top Matches for User</button> &nbsp;&nbsp;
+		<button id="checkRecommend" class="btn btn-primary">Get Recommendations</button>
+		</div>
+		</div>
+
+<div class="row">
+		<div id="resultTop" class="col-md-6">
+
+		</div>
+		<div id="resultRecommed" class="col-md-6">
+
+		</div>
+</div>
+	</div>
+<style type="text/css">
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+</style>
+
+</body>
+</html>

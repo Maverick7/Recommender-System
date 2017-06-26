@@ -1,0 +1,19 @@
+THIS IS A RECOMMENDER SYSTEM IMPLEMENTATION USING JQUERY/ JAVASCRIPT
+
+WE USE
+1) EUCLEDEAN DISTANCE
+2) PEARSON COEFFICIENT
+
+
+REFERENCE: Programming Collective Intelligence
+
+Build a recommendation system or Ranking app using HTML/CSS , Jquery and Javascript
+
+Can find 
+1) top matches (user based)
+2) recommendations (for a specific user)
+
+
+TODO: item based filtering - Add Prodcut based recommendations by transforming and then getRecommendations.
+
+&copy; Dickson Xavier (2017)  All rights Reserved
